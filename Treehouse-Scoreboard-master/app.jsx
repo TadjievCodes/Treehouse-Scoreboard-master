@@ -78,14 +78,21 @@ Stats.propTypes = {
   players: React.PropTypes.array.isRequired,
 };
 
+
+
+
 function Header(props) {
   return (
+  // In React we use className instead of class just
     <div className="header">
       <Stats players={props.players}/>
       <h1>{props.title}</h1>
     </div>
   );
 }
+
+
+
 
 Header.propTypes = {
   title: React.PropTypes.string.isRequired,
